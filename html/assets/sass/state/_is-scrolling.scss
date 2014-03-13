@@ -1,0 +1,6 @@
+.is-scrolling {
+
+	// remove all pointer events while scrolling
+	// to stop rollover states while scrolling
+	&, * { pointer-events: none; }
+}

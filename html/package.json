@@ -1,0 +1,26 @@
+{
+  "name": "tenplate",
+  "version": "0.1.0",
+  "devDependencies": {
+    "matchdep": "~0.3.0",
+    "grunt": "~0.4.2",
+    "grunt-contrib-jshint": "~0.6.4",
+    "grunt-contrib-uglify": "~0.2.4",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-compass": "~0.4.1",
+    "grunt-contrib-cssmin": "~0.6.1",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-handlebars": "~0.6.0",
+    "grunt-bower-concat": "~0.2.2",
+    "phantom": "~0.5.4",
+    "underscore": "~1.5.2",
+    "css-parse": "~1.5.3",
+    "grunt-combine-media-queries": "~1.0.9",
+    "grunt-svgmin": "~0.3.0",
+    "grunt-grunticon": "~1.0.0-beta.0",
+    "grunt-autoprefixer": "~0.7.2"
+  },
+  "dependencies": {}
+}

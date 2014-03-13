@@ -1,0 +1,30 @@
+// WE'RE ON THE GRID, MOTHER FUCKER!
+
+$grid-max: 12;
+$grid-column: 80px;
+$grid-gutter: 0px;
+ 
+@function gridw ($span: $grid-max, $offset: 0px) { 
+    @return ($grid-column * $span) + ($grid-gutter * ($span - 1)) + $offset; 
+}
+ 
+@mixin grid ($span: $grid-max, $offset: 0px) { 
+    width: gridw($span, $offset); 
+}
+ 
+@mixin grid-respond ($min: -1, $max: -1, $media: "screen") {    
+    $grid: null;
+    @if $min != -1 and $max != -1 {
+        $grid: "only " + $media + " and (min-width: " + gridw($min) + ") and (max-width: " + (gridw($max) - 1) + ")";
+    } @else if $min == -1 and $max != -1 {
+        $grid: "only " + $media + " and (max-width: " + (gridw($max) - 1) + ")";
+    } @else if $min != -1 and $max == -1 {
+        $grid: "only " + $media + " and (min-width: " + gridw($min) + ")";
+    } @else {
+        $grid: "only " + $media;
+    }
+
+    @media #{$grid} { 
+        @content;
+    };
+}
