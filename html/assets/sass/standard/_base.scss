@@ -1,6 +1,6 @@
 body {
     -webkit-backface-visibility: visible;
-    background: $site-bg url(images/site-bg-pattern.jpg) 0% 0px repeat-x;
+    background: $site-bg;
     color: $site-color;
 
     text-transform: none;
@@ -50,7 +50,6 @@ em, cite { font-style: italic; }
 
 * { 
     @include box-sizing(border-box); 
-    *behavior: url(assets/behavior/boxsizing.htc); 
     -webkit-backface-visibility: hidden;
 
     @include transition-property(none);

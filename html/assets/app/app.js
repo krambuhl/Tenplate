@@ -10,6 +10,8 @@ Space.App = (function() {
 	    children: {
 	    },
 
+	    ui: {},
+
 	    onRender: function() {
 	    	this.ui.window = $(window);
 	    	this.ui.body = $("body");
